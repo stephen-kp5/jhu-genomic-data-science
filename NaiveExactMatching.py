@@ -13,8 +13,13 @@ def naive_exact_match(text: str, pattern: str) -> list[int]:
                 break
         if match:
             positions.append(i)
-
+        
     return positions
+
+refrence = "ACGTACGTGAC"
+read = "ACGT"
+print(naive_exact_match(refrence, read))
+
 
 
 # Example usage
